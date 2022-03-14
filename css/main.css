@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(6, 65, 65)
+}
 /* navbar styling */
 .navbar{
     display: flex;
@@ -10,8 +13,13 @@
     padding: 10px;
     background-color: rgb(6, 65, 65);
 }
-.left-nav > img{
-    width: 50px;
+.left-nav > h1{
+    color: blue;
+    font-size: xx-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left-nav > h1 > em{
+    color: aqua;
 }
 .nav-links{
     display: flex;
@@ -22,4 +30,67 @@
     color: white;
     padding: 30px;
     font-size: 20px;
+}
+.nav-links > li > a:hover{
+    color: aqua ;
+    transition: all ease-out 0.5s;
+}
+/* landing page styling */
+#home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.landingpage_left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    width: 50%;
+}
+.landingpage_left > h1{
+    color: rgb(154, 209, 154);
+    padding: 20px;
+    font-size: xx-large;
+}
+.landingpage_left > p{
+    text-align: center;
+    color: white;
+    font-size: x-large;
+    padding: 10px;
+}
+.landingpage_left > p > strong{
+    color: blue;
+}
+.landingpage_left > p > em{
+    color: aqua;
+}
+.btn{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: aqua;
+    color: black;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease-out 0.5s;
+}
+.landingpage_right{
+    display: flex;
+    padding-right:20px ;
+    padding-bottom: 20px;
+}
+.landingpage_right>img{
+    width: 80%;
+    text-align: center;
+}
+.landingpage_right > img:hover{
+    transform: scale(1.05);
+    transition: all ease-out 0.5s;
 }
