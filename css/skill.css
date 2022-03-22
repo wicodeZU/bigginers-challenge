@@ -10,10 +10,11 @@
 #skills > h1{
     color: aliceblue;
 }
-.languages > h3{
-    color: aliceblue;
+.skills__content{
+    width: 100%;
+    display: flex;
 }
-.database > h3{
+.languages > h3{
     color: aliceblue;
 }
 .languages{
@@ -23,20 +24,6 @@
     row-gap: 20px;
     border-right: 3px solid white;
     align-items: center;
-}
-.database{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-}
-.database > img{
-    width: 100px;
-}
-.skills__content{
-    width: 100%;
-    display: flex;
 }
 .languages > img{
     width: 100px;
